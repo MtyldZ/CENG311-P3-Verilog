@@ -1,0 +1,6 @@
+*.v.bak
+.idea/
+.DS_Store/
+
+.*.dat
+.*.v
