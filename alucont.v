@@ -29,17 +29,13 @@ begin
 	end
 	if (|immedateop)
 	begin
-		//$monitor("immedateop %B ", immedateop);
-		gout = 3'b111;
 		if (~immedateop[1] & immedateop[0])
-		//$monitor("passed to 01");
 			gout=3'b010;
 		if (immedateop[1] & ~immedateop[0])
-			//$monitor("passed to 10");
 			gout=3'b000;
 		
 		//case(immedateop)
-			//2'b01: gout=3'b010; 	// sum
+			//2'b01: gout=3'b010; 	// add
 			//2'b10: gout=3'b000; 	// and
 		//endcase
 	end
